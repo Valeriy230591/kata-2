@@ -1,0 +1,185 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;
+}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'TT Lakes Medium';
+        src: url('../fonts/TTLakes-Medium.eot');
+        src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes-Medium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+    @font-face {
+            font-family: 'TT Lakes Bold';
+            src: url('../fonts/TTLakes-Bold.eot');
+            src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/TTLakes-Bold.woff') format('woff'),
+            url('../fonts/TTLakes-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+.wrapper{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.aside__wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    width: 320px;
+    height:auto;
+    background: #FFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+/*---------header--------*/
+.aside__header{
+    padding:18px 24px;
+    margin-bottom: 50px;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+}
+
+.header__img{
+    background-color:#FFF;
+}
+.burger{
+margin-right:16px;
+}
+.search{
+    margin-left: auto;
+}
+/*----------main----------*/
+.aside__main{
+    padding-left:24px;
+}
+.aside__item{
+    margin-bottom:22px;
+}
+.aside__btn{
+background-color:#FFF;
+color: #1B1C21;
+font-family: 'TT Lakes Medium';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: -0.2px;
+}
+.aside__btn:hover{
+    color:#7E7E82;
+}
+
+/*---------footer-------*/
+.aside__footer{
+    padding:24px 24px 32px 24px;
+}
+.footer__buttons{
+    display:flex;
+    justify-content: start;
+    gap:16px;
+    margin-bottom:16px;
+}
+.footer__btn{
+    background-color: transparent;
+}
+.footer__mail{
+    margin-bottom: 12px;
+}
+.footer__mail > p{
+color: #1B1C21;
+font-family: 'TT Lakes Medium';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: -0.2px;
+}
+.footer__tel{
+    margin-bottom: 34px;
+}
+.footer__tel>p{
+    color: #1B1C21;
+    font-family: 'TT Lakes Bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+}
+.footer__lang{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+.lang__btn{
+    background-color: transparent;
+    color: #1B1C21;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+.btn:hover{
+    opacity:0.6;
+    transform:scale(0.9);
+    transition:all 0.7s;
+}
+.lang__btn:hover{
+    color: #7E7E82;
+}
